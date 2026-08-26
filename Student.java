@@ -1,12 +1,12 @@
-class student {
-  public static void main (string [] args)
+class Student {
+  public static void main (String [] args)
   {
-  string name ="Apoorva";
-  int age ="18";
-  string college="COER University";
+  String name ="Apoorva";
+  int age =18;
+  String college="COER University";
 
-  system.out.println("Name:"+name);
-  system.out.println("age:"+age);
-  system.out.println("college:"+college);
+  System.out.println("Name:"+name);
+  System.out.println("age:"+age);
+  System.out.println("college:"+college);
   }
   }
