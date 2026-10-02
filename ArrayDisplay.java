@@ -15,3 +15,12 @@ public class ArrayDisplay{
             System.out.print(a[i] + " ");
     }
 }
+
+
+
+
+
+Enter 5 integers:
+10 20 30 40 50
+Array elements:
+10 20 30 40 50
