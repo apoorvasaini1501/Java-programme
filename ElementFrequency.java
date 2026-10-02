@@ -30,3 +30,12 @@ class ElementFrequency {
         }
     }
 }
+
+
+
+
+Enter 6 elements:
+2 3 2 4 3 2
+2 occurs 3 times
+3 occurs 2 times
+4 occurs 1 times
