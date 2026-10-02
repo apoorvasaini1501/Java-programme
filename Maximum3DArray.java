@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+class Maximum3DArray {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int[][][] a = new int[2][2][2];
+
+        System.out.println("Enter 8 elements:");
+
+        for (int i = 0; i < 2; i++)
+            for (int j = 0; j < 2; j++)
+                for (int k = 0; k < 2; k++)
+                    a[i][j][k] = sc.nextInt();
+
+        int max = a[0][0][0];
+
+        for (int i = 0; i < 2; i++)
+            for (int j = 0; j < 2; j++)
+                for (int k = 0; k < 2; k++)
+                    if (a[i][j][k] > max)
+                        max = a[i][j][k];
+
+        System.out.println("Maximum = " + max);
+    }
+}
+
+
+
+Enter 8 elements:
+10 25 5 40 15 30 8 20
+Maximum = 40
