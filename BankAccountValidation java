@@ -1,0 +1,44 @@
+class BankAccount {
+    private int accountNumber;
+    private String accountHolder;
+    private double balance;
+
+    void setAccountNumber(int n) { accountNumber = n; }
+    void setAccountHolder(String n) { accountHolder = n; }
+    void setBalance(double b) { balance = b; }
+
+    void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+            System.out.println("Deposit Successful");
+        } else {
+            System.out.println("Invalid Deposit");
+        }
+    }
+
+    void withdraw(double amount) {
+        if (amount > 0 && amount <= balance) {
+            balance -= amount;
+            System.out.println("Withdrawal Successful");
+        } else {
+            System.out.println("Invalid Withdrawal");
+        }
+    }
+
+    double getBalance() { return balance; }
+
+    public static void main(String[] args) {
+        BankAccount b = new BankAccount();
+        b.setAccountNumber(101);
+        b.setAccountHolder("Aman");
+        b.setBalance(5000);
+
+        b.deposit(1000);
+        b.withdraw(2000);
+        System.out.println("Balance: " + b.getBalance());
+    }
+}
+
+Deposit Successful
+Withdrawal Successful
+Balance: 4000.0
