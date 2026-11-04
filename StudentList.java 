@@ -1,0 +1,23 @@
+import java.util.*;
+
+class StudentListDemo {
+    public static void main(String[] args) {
+        ArrayList<String> names = new ArrayList<>();
+
+        names.add("Aman");
+        names.add("Rahul");
+        names.add("Priya");
+        names.add("Neha");
+        names.add("Riya");
+        names.add("Karan");
+        names.add("Rohan");
+        names.add("Anjali");
+        names.add("Simran");
+        names.add("Vikas");
+
+        for (String n : names)
+            System.out.println(n);
+
+        System.out.println("Total Students: " + names.size());
+    }
+}
